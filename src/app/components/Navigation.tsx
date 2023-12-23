@@ -11,9 +11,7 @@ export type Navigation = {
 
 const Navigation = ({ currentActive }: { currentActive: string }) => {
   const { lang } = useContext(LangContext) as LangContextType;
-  const [wordlist] = useState<(typeof LANG_SELECTOR)["eng"]>(
-    LANG_SELECTOR[`${lang.lang}`]
-  );
+  const [wordlist] = useState<any>(LANG_SELECTOR[`${lang.lang}`]);
 
   const [navigations] = useState<Navigation[]>(wordlist.navigator);
 

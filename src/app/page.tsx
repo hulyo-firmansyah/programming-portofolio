@@ -23,7 +23,7 @@ export default function Home() {
     const y = window.pageYOffset;
     let newActiveSection = null;
 
-    sections.current?.forEach((section) => {
+    sections.current?.forEach((section: any) => {
       const top = section.offsetTop;
       const height = section.offsetHeight;
 

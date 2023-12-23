@@ -5,9 +5,7 @@ import { LangContextType } from "@/@types/lang";
 
 const DisplayTitleText = () => {
   const { lang } = useContext(LangContext) as LangContextType;
-  const [wordlist] = useState<(typeof LANG_SELECTOR)["eng"]>(
-    LANG_SELECTOR[`${lang.lang}`]
-  );
+  const [wordlist] = useState<any>(LANG_SELECTOR[`${lang.lang}`]);
 
   return (
     <Fragment>
