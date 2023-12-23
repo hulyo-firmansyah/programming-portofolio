@@ -1,6 +1,6 @@
 const AboutSection = () => (
   <section id="about" data-section className="pb-28 lg:pb-44 pt-28">
-    <div className="font-bold uppercase text-sm tracking-widest mb-7">
+    <div className="font-bold uppercase text-sm tracking-widest mb-7 lg:hidden">
       About
     </div>
     <div className="text-gray-400 flex flex-col gap-5 tracking-wide">
