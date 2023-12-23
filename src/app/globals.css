@@ -15,3 +15,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.tech-badge {
+  @apply bg-cyan-400 bg-opacity-30 px-3 py-2 rounded-full text-xs text-cyan-400 font-medium;
+}

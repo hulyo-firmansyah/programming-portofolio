@@ -1,5 +1,8 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import NavigationItem from "./NavigationItem";
+import { LangContext } from "../context/langContext";
+import { LangContextType } from "@/@types/lang";
+import LANG_SELECTOR from "../lang/lang";
 
 export type Navigation = {
   text: string;
@@ -7,20 +10,12 @@ export type Navigation = {
 };
 
 const Navigation = ({ currentActive }: { currentActive: string }) => {
-  const [navigations] = useState<Navigation[]>([
-    {
-      text: "about",
-      link: "#about",
-    },
-    {
-      text: "work experience",
-      link: "#work-experience",
-    },
-    {
-      text: "project",
-      link: "#project",
-    },
-  ]);
+  const { lang } = useContext(LangContext) as LangContextType;
+  const [wordlist] = useState<(typeof LANG_SELECTOR)["eng"]>(
+    LANG_SELECTOR[`${lang.lang}`]
+  );
+
+  const [navigations] = useState<Navigation[]>(wordlist.navigator);
 
   return (
     <ul className="mt-20 uppercase font-semibold text-xs hidden lg:block">

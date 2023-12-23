@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState, useContext } from "react";
 import DisplayTitleText from "./components/DisplayTitleText";
 import Navigation from "./components/Navigation";
