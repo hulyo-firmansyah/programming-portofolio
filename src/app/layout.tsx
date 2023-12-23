@@ -19,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Hulyo Firman Syahputra — Portofolio</title>
+        <link rel="icon" href="/favicon.ico"></link>
       </head>
       <body className={inter.className}>
         <LangProvider>{children}</LangProvider>
