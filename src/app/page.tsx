@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useContext } from "react";
 import DisplayTitleText from "./components/DisplayTitleText";
 import Navigation from "./components/Navigation";
 import SocialMedia from "./components/SocialMedia";
@@ -9,9 +9,12 @@ import LanguageSelector from "./components/LanguageSelector";
 import AboutSection from "./components/sections/About";
 import ExperienceSection from "./components/sections/Experience";
 import ProjectSection from "./components/sections/ProjectSection";
+import { LangContext } from "./context/langContext";
+import { LangContextType } from "@/@types/lang";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<string>("");
+  const ll = useContext(LangContext) as LangContextType;
 
   const sections = useRef<any>();
   const cursorRef = useRef<HTMLDivElement>(null);
@@ -51,6 +54,10 @@ export default function Home() {
       document.removeEventListener("mousemove", handleCursor);
     };
   }, []);
+
+  useEffect(() => {
+    console.log(ll);
+  }, [ll]);
 
   return (
     <main className="lg:flex justify-between bg-slate-900 text-gray-100 px-5 lg:px-0">
