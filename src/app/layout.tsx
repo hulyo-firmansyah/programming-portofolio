@@ -17,6 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Hulyo Firman Syahputra — Portofolio</title>
+      </head>
       <body className={inter.className}>
         <LangProvider>{children}</LangProvider>
       </body>
