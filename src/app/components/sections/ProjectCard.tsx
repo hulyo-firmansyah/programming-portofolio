@@ -14,9 +14,12 @@ const ProjectCard = (props: (typeof LANG_SELECTOR)["in"]["projects"][0]) => {
         />
       </div>
       <div className="sm:col-span-7 col-span-10 sm:order-2 order-1">
-        <div className="font-medium text-gray-100 group-hover:text-cyan-400 transition-colors ease-in">
+        <a
+          href={props.link}
+          className="font-medium text-gray-100 hover:text-cyan-400 transition-colors ease-in"
+        >
           {props.heading}
-        </div>
+        </a>
         <div className="text-gray-400 text-sm mt-2">{props.shortdesc}</div>
         <div className="mt-3 flex gap-3 flex-wrap">
           {props.tags.map((v, i) => (

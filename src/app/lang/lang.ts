@@ -24,30 +24,89 @@ const LANG_SELECTOR = {
     ],
     experiences: [
       {
-        dateyear: "2020 — 2021",
-        heading: "Electron JS Developer • JV Partner",
-        subheading: "Project leader",
-        shortdesc: "Membuat aplikasi mesinmp",
+        dateyear: "2023 — Sekarang",
+        heading: "Fullstack Developer • PT Risky Putra Kasih",
+        subheading: ["Project Manager", "Senior Engineer"],
+        shortdesc:
+          "Menyelesaikan masalah migrasi digitalisasi perusahaan menggunakan aplikasi management sistem gudang. Membuat landing page untuk perusahaan PT Risky Putra Kasih, Medistarlab serta PT Murni Putra Lang",
         tags: [
-          "Node JS",
-          "React JS",
-          "Electron JS",
-          "Tailwind CSS",
-          "Redux",
-          "SQLite",
-          "Prisma JS",
+          "NextJS",
+          "React",
+          "Tailwindcss",
+          "MUI",
+          "NodeJS",
+          "Electron",
+          "Wordpress",
         ],
-        link: "",
+        link: "https://ptriskyputrakasih.com/",
+      },
+      {
+        dateyear: "Agustus 2021 — 2022",
+        heading: "Fullstack Developer • Uqishop Group",
+        subheading: ["Project Manager", "Senior Engineer"],
+        shortdesc:
+          "Menciptakan solusi untuk memudahkan Digital Marketing dengan melakukan research & development aplikasi upload massal produk facebook marketplace Auto FBMP",
+        tags: ["NextJS", "React", "Tailwindcss", "NodeJS", "Electron"],
+        link: "https://www.autofbmp.com/",
+      },
+      {
+        dateyear: "Mei 2021 — Agustus 2021",
+        heading: "Wordpress • Uqishop Group",
+        subheading: ["Wordpress Designer", "Server Engineer"],
+        shortdesc:
+          "Development landing page & management website Wordpress untuk digital marketing. Bekerja sama dengan team yang handal & professional dalam mengelola & maintenance server hosting",
+        tags: ["Wordpress", "CPanel", "Niagahoster", "Google Cloud VM"],
+        link: "https://uqishop.com/",
+      },
+      {
+        dateyear: "2020",
+        heading: "Olshopedia • JV Partner Indonesia",
+        subheading: ["Frontend Developer"],
+        shortdesc:
+          "Berkolaborasi dengan team yang professional untuk mengembangkan aplikasi E-Commerce Olshopedia",
+        tags: ["PHP", "Laravel", "CSS", "Bootstrap", "JQuery"],
+        link: "https://www.jvpartner.id/",
       },
     ],
     projects: [
       {
-        imageUrl:
-          "https://brittanychiang.com/_next/image?url=%2Fimages%2Fprojects%2Fcourse-card.png&w=256&q=75",
+        imageUrl: "/images/autofbmp.png",
         heading: "Auto FBMP",
-        shortdesc: "Adalah sya",
-        tags: ["React"],
-        link: "",
+        shortdesc:
+          "Solusi untuk digital marketing facebook marketplace. Software ini digunakan untuk upload massal dan scrap massal produk di Facebook marketplace",
+        tags: [
+          "Next JS",
+          "Tailwind CSS",
+          "Electron JS",
+          "Prisma JS",
+          "SQLite",
+          "Node JS",
+        ],
+        link: "https://www.autofbmp.com/",
+      },
+      {
+        imageUrl: "/images/olshopedia.png",
+        heading: "Olshopedia",
+        shortdesc:
+          "Solusi untuk digital marketing facebook marketplace. Software ini digunakan untuk upload massal dan scrap massal produk di Facebook marketplace",
+        tags: ["PHP", "Laravel", "JQuery", "Bootstrap", "CSS"],
+        link: "https://www.autofbmp.com/",
+      },
+      {
+        imageUrl: "/images/ptmpl.png",
+        heading: "Website PT Murni Putra Lang",
+        shortdesc:
+          "Solusi untuk digital marketing facebook marketplace. Software ini digunakan untuk upload massal dan scrap massal produk di Facebook marketplace",
+        tags: ["Wordpress"],
+        link: "https://www.autofbmp.com/",
+      },
+      {
+        imageUrl: "/images/stockapp.png",
+        heading: "Management Stock Gudang",
+        shortdesc:
+          "Solusi untuk digital marketing facebook marketplace. Software ini digunakan untuk upload massal dan scrap massal produk di Facebook marketplace",
+        tags: ["Laravel", "Rest API", "Next JS", "MUI"],
+        link: "https://www.autofbmp.com/",
       },
     ],
   },
