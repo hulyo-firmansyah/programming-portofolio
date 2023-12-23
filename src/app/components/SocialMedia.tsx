@@ -1,5 +1,5 @@
 const SocialMedia = () => (
-  <div className="flex gap-5 text-gray-400 mt-20">
+  <div className="flex gap-5 text-gray-400 mt-10 lg:mt-20">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 16 16"

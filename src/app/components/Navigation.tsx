@@ -23,7 +23,7 @@ const Navigation = ({ currentActive }: { currentActive: string }) => {
   ]);
 
   return (
-    <ul className="mt-20 uppercase font-semibold text-xs">
+    <ul className="mt-20 uppercase font-semibold text-xs hidden lg:block">
       {navigations.map((v, i) => (
         <NavigationItem
           key={i}

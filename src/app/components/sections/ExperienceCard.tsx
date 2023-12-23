@@ -1,5 +1,5 @@
 const ExperienceCard = () => (
-  <div className="flex gap-8 hover:bg-slate-800 p-9 rounded-md hover:bg-opacity-45 hover:shadow-lg border border-gray-700 hover:border-t hover:border-t-gray-600 transition-all ease-in group hover:cursor-pointer mb-5">
+  <div className="lg:flex gap-8 lg:hover:bg-slate-800 lg:p-9 rounded-md lg:hover:bg-opacity-45 lG:hover:shadow-lg lg:border border-gray-700 lg:hover:border-t lg:hover:border-t-gray-600 transition-all ease-in group hover:cursor-pointer lg:mb-5 mb-10">
     <div className="text-xs uppercase font-medium pt-1 shrink-0">
       2020 &#8212; Present
     </div>

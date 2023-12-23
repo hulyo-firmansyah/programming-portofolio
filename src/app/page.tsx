@@ -53,18 +53,19 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex justify-between bg-slate-900 text-gray-100">
+    <main className="lg:flex justify-between bg-slate-900 text-gray-100 px-5 lg:px-0">
       <div
         className="pointer-events-none fixed inset-0 transition duration-300 z-30"
         ref={cursorRef}
       />
-      <header className="w-1/2 sticky top-0 h-screen py-28 px-28">
+
+      <header className="lg:w-1/2 lg:sticky top-0 lg:h-screen py-10 lg:py-28 lg:px-28">
         <DisplayTitleText />
         <Navigation currentActive={activeSection} />
         <SocialMedia />
         <LanguageSelector />
       </header>
-      <section className="w-1/2 pr-28">
+      <section className="lg:w-1/2 lg:pr-28">
         <AboutSection />
         <ExperienceSection />
         <ProjectSection />
