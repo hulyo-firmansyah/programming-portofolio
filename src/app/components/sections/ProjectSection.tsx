@@ -11,7 +11,7 @@ const ProjectSection = () => {
   );
 
   return (
-    <section data-section id="project" className="pb-44">
+    <section data-section id="project" className="pb-28">
       <div className="font-bold uppercase text-sm tracking-widest mb-7 text-gray-100 lg:hidden">
         {wordlist.navigator[2].text}
       </div>

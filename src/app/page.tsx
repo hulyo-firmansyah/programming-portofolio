@@ -10,6 +10,7 @@ import ExperienceSection from "./components/sections/Experience";
 import ProjectSection from "./components/sections/ProjectSection";
 import { LangContext } from "./context/langContext";
 import { LangContextType } from "@/@types/lang";
+import ContactSection from "./components/sections/Contact";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<string>("");
@@ -75,6 +76,7 @@ export default function Home() {
         <AboutSection />
         <ExperienceSection />
         <ProjectSection />
+        <ContactSection />
       </section>
     </main>
   );
