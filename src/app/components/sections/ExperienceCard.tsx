@@ -5,7 +5,7 @@ const ExperienceCard = (
 ) => (
   <a
     href={props.link}
-    className="lg:grid lg:grid-cols-12 gap-8 lg:hover:bg-slate-800 lg:p-9 rounded-md lg:hover:bg-opacity-45 lg:hover:shadow-lg lg:border border-gray-700 lg:hover:border-t lg:hover:border-t-gray-600 transition-all ease-in group hover:cursor-pointer lg:mb-5 mb-10 w-full"
+    className="lg:grid lg:grid-cols-12 gap-8 lg:hover:bg-slate-800 lg:p-9 rounded-md lg:hover:bg-opacity-45 lg:hover:shadow-lg lg:border border-gray-700 lg:hover:border-t lg:hover:border-t-gray-600 transition-all ease-in group hover:cursor-pointer lg:mb-5 mb-10 w-full block"
   >
     <div className="lg:col-span-2 text-xs uppercase font-medium pt-1 shrink-0">
       {props.dateyear}
