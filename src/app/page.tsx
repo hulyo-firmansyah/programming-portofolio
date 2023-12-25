@@ -11,6 +11,7 @@ import ProjectSection from "./components/sections/ProjectSection";
 import { LangContext } from "./context/langContext";
 import { LangContextType } from "@/@types/lang";
 import ContactSection from "./components/sections/Contact";
+import Head from "next/head";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<string>("");
@@ -55,12 +56,16 @@ export default function Home() {
     };
   }, []);
 
-  useEffect(() => {
-    console.log(ll);
-  }, [ll]);
-
   return (
     <main className="lg:flex justify-between bg-slate-900 text-gray-100 px-5 lg:px-0">
+      <Head>
+        <title>Hulyo Firman Syahputra — Portofolio</title>
+        <meta
+          name="description"
+          content="Portofolio programmer & developer Hulyo Firman Syahputra. Jelajahi lebih lanjut tentang skill dan projek saya!."
+          key="portofolio"
+        />
+      </Head>
       <div
         className="pointer-events-none fixed inset-0 transition duration-300 z-30"
         ref={cursorRef}
